@@ -1,14 +1,19 @@
 import './App.css';
-import ClassComponent from './components/ClassComponent';
+//import ClassComponent from './components/ClassComponent';
+//import FunctionComponent from './components/FunctionComponent';
+import CartWidget from './components/CartWidget';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-		<ClassComponent/>
-      </header>
-    </div>
-  );
+
+	const className = "Clase";
+	const functionName = "Funcion";
+	return (
+		<div className="App">
+			<header className="App-header">
+				<CartWidget/>
+			</header>
+		</div>
+	);
 }
 
 export default App;
