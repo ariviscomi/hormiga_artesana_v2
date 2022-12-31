@@ -1,16 +1,15 @@
 import './App.css';
-//import ClassComponent from './components/ClassComponent';
-//import FunctionComponent from './components/FunctionComponent';
-import CartWidget from './components/CartWidget';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
 
-	const className = "Clase";
-	const functionName = "Funcion";
 	return (
 		<div className="App">
-			<header className="App-header">
-				<CartWidget/>
+			<header>
+				<NavBar/>
+				<ItemListContainer/>
 			</header>
 		</div>
 	);

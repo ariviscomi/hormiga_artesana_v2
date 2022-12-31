@@ -1,9 +1,10 @@
-import 'https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css';
+import { MdShoppingCart } from "react-icons/md";
 
 const CartWidget = () =>{
 	return(
 		<div>
-			<i></i>
+			<MdShoppingCart/>
+			<span>5</span>
 		</div>
 	);
 };
