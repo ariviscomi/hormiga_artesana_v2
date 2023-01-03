@@ -1,6 +1,8 @@
 const ItemListContainer = () =>{
 	return(
-		//
+		<span>
+			item list
+		</span>
 	);
 };
 
