@@ -10,7 +10,7 @@ const NavBar = () => {
 		<div>
 			<Navbar bg="light" expand="lg">
 				<Container>
-					<Navbar.Brand href="#home">HORMIGUITA Artesana</Navbar.Brand>
+					<Navbar.Brand href="#home"><img src='../../Logo-64x64.png'/></Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">

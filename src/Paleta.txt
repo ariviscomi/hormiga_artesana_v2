@@ -1,0 +1,5 @@
+#ffffff // #1 Blanco
+#f3e8ee // #2 Rosita
+#a7433a // #3 Rojo
+#293241 // #4 Azul
+#000000 // #5 Negro
