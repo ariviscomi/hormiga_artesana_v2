@@ -1,56 +1,40 @@
 import './_itemList.css';
 import ItemList from './ItemList';
-import { useEffect } from 'react';
-
-//* Creacion de Productos:
-
-class product {
-	constructor(id, title, image, description, price, stock) {
-		this.id = id;
-		this.title = title;
-		this.img = image;
-		this.desc = description;
-		this.price = price;
-		this.stock = stock;
-	};
-};
-
-const prod1 = new product(1, "Mate Montañas", "./images/montaña.jpeg","Mate de algarrobo con diseño de montañas", 500, 4);
-const prod2 = new product(2, "Mate Futbol", "./images/futbol.jpeg","Mate de algarrobo con escudo de equipo de futbol a eleccion", 600, 7);
-const prod3 = new product(3, "Mate Argento", "./images/argentina.jpeg","Mate de algarrobo con motivo de Argentina", 400, 5);
-const prod4 = new product(4, "Mate Minimal","./images/minimal.jpeg", "Mate de algarrobo con diseño minimalista", 450, 8);
-const prod5 = new product(5, "Mate Mandala","./images/mandala.jpeg", "Mate de algarrobo con diseño de Mandalas", 500, 7);
-const prod6 = new product(6, "Mate Pets", "./images/pets.jpeg", "Mate de algarrobo con diseño de tu mascota", 650, 3);
+import { useEffect, useState } from 'react';
 
 //* Lista de Productos
 const PRODS = [
-	prod1,
-	prod2,
-	prod3,
-	prod4,
-	prod5,
-	prod6
+	{ id: 1, title: "Mate Montañas", img: "./images/montaña.jpeg", desc: "Mate de algarrobo con diseño de montañas", price: 500 },
+	{ id: 2, title: "Mate Futbol", img: "./images/futbol.jpeg", desc: "Mate de algarrobo con escudo de equipo de futbol a eleccion", price: 600 },
+	{ id: 3, title: "Mate Argento", img: "./images/argentina.jpeg", desc: "Mate de algarrobo con motivo de Argentina", price: 400 },
+	{ id: 4, title: "Mate Minimal", img: "./images/minimal.jpeg", desc: "Mate de algarrobo con diseño minimalista", price: 450 },
+	{ id: 5, title: "Mate Mandala", img: "./images/mandala.jpeg", desc: "Mate de algarrobo con diseño de Mandalas", price: 500 },
+	{ id: 6, title: "Mate Pets", img: "./images/pets.jpeg", desc: "Mate de algarrobo con diseño de tu mascota", price: 650 }
 ];
 
-const ItemListContainer = () =>{
-	const getProducts = new Promise((resolve, reject) => {
+const ItemListContainer = () => {
+
+	const [products, setProducts] = useState([]);
+
+	const getProducts = new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(PRODS);
 		}, 2000);
 	});
 
-	useEffect(()=>{
+	useEffect(() => {
 		getProducts
-			.then((response)=>{
+			.then((response) => {
 				console.log(response);
+				setProducts(response);
 			})
 
 			.catch(error => console.log(error))
 	});
 
-	return(
+	return (
 		<section id="itemListContainer">
-			<ItemList/>
+			<ItemList PRODS={products}/>
 		</section>
 	);
 };
