@@ -7,10 +7,9 @@ import CartWidget from './CartWidget';
 const NavBar = () => {
 
 	return (
-		<div>
+		<>
 			<Navbar bg="light" expand="lg">
 				<Container>
-					<Navbar.Brand href="#home"><img src='../../Logo-64x64.png'/></Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
@@ -26,10 +25,12 @@ const NavBar = () => {
 							</NavDropdown>
 						</Nav>
 					</Navbar.Collapse>
-					<CartWidget/>
+					<Navbar.Brand href="#home"><img src='../../Logo-64x64.png' alt='logo'/></Navbar.Brand>
+				<CartWidget/>
 				</Container>
+				
 			</Navbar>
-		</div>
+		</>
 	);
 };
 
