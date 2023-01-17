@@ -1,9 +1,3 @@
-import './_itemList.css';
-import ItemList from './ItemList';
-import { useEffect } from 'react';
-
-//* Creacion de Productos:
-
 class product {
 	constructor(id, title, image, description, price, stock) {
 		this.id = id;
@@ -22,7 +16,6 @@ const prod4 = new product(4, "Mate Minimal","./images/minimal.jpeg", "Mate de al
 const prod5 = new product(5, "Mate Mandala","./images/mandala.jpeg", "Mate de algarrobo con diseño de Mandalas", 500, 7);
 const prod6 = new product(6, "Mate Pets", "./images/pets.jpeg", "Mate de algarrobo con diseño de tu mascota", 650, 3);
 
-//* Lista de Productos
 const PRODS = [
 	prod1,
 	prod2,
@@ -32,27 +25,12 @@ const PRODS = [
 	prod6
 ];
 
-const ItemListContainer = () =>{
-	const getProducts = new Promise((resolve, reject) => {
-		setTimeout(() => {
-			resolve(PRODS);
-		}, 2000);
-	});
+const getProductos = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		resolve(PRODS);
+	}, 2000);
+});
 
-	useEffect(()=>{
-		getProducts
-			.then((response)=>{
-				console.log(response);
-			})
 
-			.catch(error => console.log(error))
-	});
 
-	return(
-		<section id="itemListContainer">
-			<ItemList/>
-		</section>
-	);
-};
-
-export default ItemListContainer;
+export default getProductos;
