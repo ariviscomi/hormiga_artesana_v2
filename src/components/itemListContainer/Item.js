@@ -1,20 +1,20 @@
-const Item = (item) => {
+const Item = ({prod}) => {
   return (
-	<div key={item.id}>
+	<div id={prod.id} key={prod.id}>
 		<div>
-			<h3>{item.title}</h3>
+			<h3>{prod.title}</h3>
 		</div>
 							
 		<div>
-			<img src={item.img} alt="imagen del producto"/>
+			<img src={prod.img} alt="imagen del producto"/>
 		</div>
 						
 		<div>
-			<p>{item.desc}</p>
+			<p>{prod.desc}</p>
 		</div>
 							
 		<div>
-			<span>Precio: ${item.price}</span>
+			<span>Precio: ${prod.price}</span>
 		</div>
 	</div>
   );
