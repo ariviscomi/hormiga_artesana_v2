@@ -3,7 +3,11 @@ const ItemList = ({PRODS}) => {
   return (
 	<>
 		<ul>
-			{PRODS.map((item) => (<Item prod={item}/> ))}
+			{PRODS.map((item) => {
+				return(
+					<Item key={item.id} prod={item}/>
+				)
+			})}
 		</ul>
 	</>
   );
