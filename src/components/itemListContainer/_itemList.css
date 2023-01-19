@@ -1,3 +1,11 @@
+ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+	align-items:center;
+}
+
 .prod{
 	padding: 0.2rem;
 	width: min-content;
