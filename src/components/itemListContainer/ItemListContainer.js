@@ -1,5 +1,5 @@
-import './_itemList.css';
 import ItemList from './ItemList';
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 //* Lista de Productos
@@ -33,10 +33,8 @@ const ItemListContainer = () => {
 	});
 
 	return (
-		<section id="itemListContainer">
-			<ItemList PRODS={products}/>
-		</section>
-	);
+		<section id="itemListContainer"><ItemList PRODS={products}/></section>
+	)
 };
 
 export default ItemListContainer;

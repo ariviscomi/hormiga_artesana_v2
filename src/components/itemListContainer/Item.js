@@ -1,3 +1,4 @@
+import React from 'react';
 const Item = ({ prod }) => {
 	return (
 		<div id={prod.id} className='prod'>
