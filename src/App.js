@@ -4,6 +4,7 @@ import { Header } from './components/header/Header';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 				<Route path='/' element={<ItemListContainer/>} />
 				<Route path='item' element={<ItemDetailContainer/>} />
 			</Routes>
+			<Footer/>
 		</BrowserRouter>
 	); 
 };
