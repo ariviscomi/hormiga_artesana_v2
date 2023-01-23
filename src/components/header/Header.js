@@ -7,11 +7,11 @@ export const Header = () => {
   return (
 	<header>
 		<NavBar/>
-		<HeaderMenu/>
+		{/* <HeaderMenu/>
 		<div id='headerLogo' className='logo'>
 			<img src='./images/Logo-64x64.png' alt='logo'/>
 		</div>
-		<HeaderCart/>
+		<HeaderCart/> */}
 	</header>
   )
 }
