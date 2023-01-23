@@ -29,6 +29,15 @@ body {
   max-width: calc(100% - 2rem);
   border: 1px groove mediumvioletred;
   margin: 1rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#itemListContainer .prod {
+  width: 18.1rem;
+  border: 1px solid mediumblue;
+  max-height: min-content;
 }
 
 /*# sourceMappingURL=style.css.map */

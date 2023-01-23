@@ -33,7 +33,9 @@ const ItemListContainer = () => {
 	});
 
 	return (
-		<section id="itemListContainer"><ItemList PRODS={products}/></section>
+		<section id="itemListContainer">
+			<ItemList PRODS={products}/>
+		</section>
 	)
 };
 
