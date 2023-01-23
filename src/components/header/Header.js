@@ -5,7 +5,7 @@ import HeaderCart from "./HeaderCart"
 
 export const Header = () => {
   return (
-	<header>
+	<header id='header' className='header'>
 		<NavBar/>
 		{/* <HeaderMenu/>
 		<div id='headerLogo' className='logo'>

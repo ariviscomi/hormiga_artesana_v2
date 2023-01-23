@@ -15,4 +15,20 @@ body {
   font-family: "Roboto Flex", sans-serif;
 }
 
+.header {
+  border: 1px groove mediumseagreen;
+}
+
+.footer {
+  min-height: 15rem;
+  width: 100vw;
+  border: 1px groove mediumorchid;
+}
+
+#itemListContainer {
+  max-width: calc(100% - 2rem);
+  border: 1px groove mediumvioletred;
+  margin: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
