@@ -1,3 +1,52 @@
 .header{
-	border: 1px groove mediumseagreen;
+	background-color: nth($paleta,4);
+	color: nth($paleta,1);
+	padding: 1rem 0;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+
+	.logo{
+		display: flex;
+		justify-content: center;
+	}
+
+	.menu{
+		padding-left: 2rem;
+		display: flex;
+		justify-content: left;
+		align-items:center;
+
+		.menuIcon{
+			width: 3.2rem;
+			height: 3.2rem;
+ 
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			
+			cursor: pointer;
+			
+			span{
+				background-color: nth($paleta,1);
+				width: 3.2rem;
+				height: 0.2rem;
+				
+				
+			}
+		}
+	}
+
+	.cart{
+		display: flex;
+		justify-content: right;
+		align-items: center;
+
+		padding-right: 2rem;
+
+		
+		.cartIcon{
+			font-size: 3.2rem;
+			cursor: pointer;	
+		}
+	}
 }

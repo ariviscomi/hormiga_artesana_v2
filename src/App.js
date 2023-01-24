@@ -11,10 +11,12 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header/>
-			<Routes>
-				<Route path='/' element={<ItemListContainer/>} />
-				<Route path='item' element={<ItemDetailContainer/>} />
-			</Routes>
+			<main>
+				<Routes>
+					<Route path='/' element={<ItemListContainer/>} />
+					<Route path='item' element={<ItemDetailContainer/>} />
+				</Routes>
+			</main>
 			<Footer/>
 		</BrowserRouter>
 	); 

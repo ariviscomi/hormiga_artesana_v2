@@ -3,17 +3,34 @@
 * {
 	margin: 0;
 	padding: 0;
-	
 }
 
 html {
 	max-width: 100vw;
-	font-size: 62.5%;
+  	font-size: 62.5%;
+
+	::-webkit-scrollbar{
+		display: none;
+	}
+
+	body{
+		height: 100vh;
+	}
+
+	#root{
+		font-family: 'Roboto Flex', sans-serif;
+		background-color: nth($paleta,2);
+
+		min-height: 100%;
+
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+
+		main{
+			background-image: url('../../images/montaña-izq.png'),url('../../images/montaña-der.png');
+			background-repeat: no-repeat;
+			background-position: bottom;
+		}
+	}
 }
 
-
-body {
-	max-width: 100vw;
-	height: 100vh;
-	font-family: 'Roboto Flex', sans-serif;
-}
