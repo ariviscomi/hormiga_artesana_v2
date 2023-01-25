@@ -28,6 +28,40 @@ html #root main {
   background-position: bottom;
 }
 
+.headerNav {
+  margin-top: 0.5rem;
+  max-height: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerNav ul {
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerNav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+.headerNav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.headerNav ul li:hover {
+  border: 1px solid #293241;
+}
+
 .header {
   background-color: #293241;
   color: #ffffff;

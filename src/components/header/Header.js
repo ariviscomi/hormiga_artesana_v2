@@ -1,18 +1,15 @@
 import React from 'react';
-import NavBar from "./NavBar"
 import HeaderMenu from "./HeaderMenu"
 import HeaderCart from "./HeaderCart"
 
 export const Header = () => {
-  return (
-		<NavBar/>
-		)
-	}
-	
-	/* <header id='header' className='header'>
-			<HeaderMenu/>
+	return (
+		<header id='header' className='header'>
+			<HeaderMenu />
 			<div id='headerLogo' className='logo'>
-				<img src='./Logo-64x64.png' alt='logo'/>
+				<img src='./Logo-64x64.png' alt='logo' />
 			</div>
-			<HeaderCart/>
-		</header> */
+			<HeaderCart />
+		</header>
+	)
+}

@@ -1,0 +1,36 @@
+.headerNav{
+	margin-top:0.5rem;
+	max-height: 6.4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	ul{
+		margin: 0;
+		padding: 0;
+		flex-direction: row;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			padding: 0 1rem;
+			margin: 0 1rem;
+
+			a{
+				text-decoration: none;
+				color: nth($paleta,5);
+				font-weight: bold;
+				font-size: 1.5rem;
+
+				cursor: pointer;
+			}
+		}
+
+		li:hover{
+			border: 1px solid nth($paleta,4);
+		}
+	}
+}
