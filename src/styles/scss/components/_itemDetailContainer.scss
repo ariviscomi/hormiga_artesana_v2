@@ -1,0 +1,31 @@
+#itemDetailContainer{
+	display: flex;
+	justify-content:space-around;
+	flex-direction: column;
+	.itemDetail{
+		background-color: nth($paleta,1);
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		border: 1px solid nth($paleta,3);
+		border-radius: 5px;
+
+		height: 80%;
+		
+		h3{
+			text-align: center;
+			font-size: 3.2rem;
+		}
+		.prodDetailImg{
+			display: flex;
+			justify-content: center;
+		}
+
+		.prodDetailDesc{
+			p,span{
+				text-align: center;
+				font-size: 2.2rem;
+			}
+		}
+	}
+}

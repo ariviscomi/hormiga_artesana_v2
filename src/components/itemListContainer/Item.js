@@ -8,10 +8,10 @@ const Item = ({ prod }) => {
 			<div>
 				<img src={prod.img} alt="imagen del producto" />
 			</div>
-			<div>
+			<div className='prodDesc'>
 				<p>{prod.desc}</p>
 			</div>
-			<div>
+			<div className='prodPrice'>
 				<span>Precio: ${prod.price}</span>
 			</div>
 		</div>

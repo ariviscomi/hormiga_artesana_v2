@@ -6,34 +6,47 @@
 }
 
 html {
-  max-width: 100vw;
   font-size: 62.5%;
+  width: 100vw;
 }
 html ::-webkit-scrollbar {
   display: none;
 }
 html body {
   height: 100vh;
-}
-html #root {
   font-family: "Roboto Flex", sans-serif;
   background-color: #f3e8ee;
+  width: 100vw;
+}
+html #root {
   min-height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
+  width: 100vw;
 }
 html #root main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   background-image: url("../../images/montaña-izq.png"), url("../../images/montaña-der.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
+html #root main section {
+  width: calc(100% - 1rem);
+  max-width: 100%;
+  border: 1px groove rgba(167, 67, 58, 0.5019607843);
+  padding: 1rem 0.5rem;
+}
 
 .headerNav {
-  margin-top: 0.5rem;
   max-height: 6.4rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(167, 67, 58, 0.5019607843);
+  margin-bottom: 0.5rem;
 }
 .headerNav ul {
   margin: 0;
@@ -51,7 +64,7 @@ html #root main {
   padding: 0 1rem;
   margin: 0 1rem;
 }
-.headerNav ul li a {
+.headerNav ul li span {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
@@ -68,6 +81,7 @@ html #root main {
   padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
 }
 .header .logo {
   display: flex;
@@ -106,22 +120,55 @@ html #root main {
 .footer {
   min-height: 15rem;
   width: 100vw;
-  border: 1px groove mediumorchid;
+  border: 1px solid #a7433a;
+  margin-top: 1rem;
 }
 
-#itemListContainer {
-  max-width: calc(100% - 2rem);
-  border: 1px groove mediumvioletred;
-  margin: 1rem;
-  padding: 1rem 0.5rem;
+#itemDetailContainer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
   flex-direction: column;
 }
+#itemDetailContainer .itemDetail {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #a7433a;
+  border-radius: 5px;
+  height: 80%;
+}
+#itemDetailContainer .itemDetail h3 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+#itemDetailContainer .itemDetail .prodDetailImg {
+  display: flex;
+  justify-content: center;
+}
+#itemDetailContainer .itemDetail .prodDetailDesc p, #itemDetailContainer .itemDetail .prodDetailDesc span {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
 #itemListContainer .prod {
-  width: 18.1rem;
-  border: 1px solid mediumblue;
+  padding: 0 0.2rem;
+  margin: 0.5rem;
+  width: min-content;
+  background-color: #ffffff;
   max-height: min-content;
+  border: 1px solid #a7433a;
+  border-radius: 5px;
+}
+#itemListContainer .prod h3 {
+  text-align: center;
+}
+#itemListContainer .prod .prodDesc, #itemListContainer .prod .prodPrice {
+  padding: 0.5rem;
+}
+#itemListContainer .prod .prodDesc p, #itemListContainer .prod .prodPrice p {
+  margin: 0;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
