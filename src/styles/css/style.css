@@ -40,7 +40,7 @@ html #root main section {
 }
 
 .headerNav {
-  max-height: 6.4rem;
+  height: 6.4rem;
   width: 100vw;
   display: flex;
   justify-content: center;
