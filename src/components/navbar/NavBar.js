@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -6,16 +7,16 @@ const NavBar = () => {
 		<nav className='headerNav'>
 			<ul>
 				<li>
-					<span>Natural Wood</span>
+					<Link>Natural Wood</Link>
 				</li>
 				<li>
-					<span>Minimalista</span>
+					<Link>Minimalista</Link>
 				</li>
 				<li>
-					<span>Tematicos</span>
+					<Link>Tematicos</Link>
 				</li>
 				<li>
-					<span>Personalizados</span>
+					<Link>Personalizados</Link>
 				</li>
 				<li>
 					<input type='search' placeholder='Buscar'/> <span>Buscar</span>

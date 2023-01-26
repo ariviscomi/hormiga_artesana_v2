@@ -19,7 +19,7 @@ const ItemListContainer = () => {
 	const getProducts = new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(PRODS);
-		}, 2000);
+		}, 1000);
 	});
 
 	useEffect(() => {

@@ -64,7 +64,7 @@ html #root main section {
   padding: 0 1rem;
   margin: 0 1rem;
 }
-.headerNav ul li span {
+.headerNav ul li a {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
@@ -151,7 +151,16 @@ html #root main section {
   font-size: 2.2rem;
 }
 
-#itemListContainer .prod {
+#itemListContainer ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#itemListContainer ul a {
+  width: min-content;
+}
+#itemListContainer ul a .prod {
   padding: 0 0.2rem;
   margin: 0.5rem;
   width: min-content;
@@ -160,15 +169,21 @@ html #root main section {
   border: 1px solid #a7433a;
   border-radius: 5px;
 }
-#itemListContainer .prod h3 {
+#itemListContainer ul a .prod h3 {
   text-align: center;
 }
-#itemListContainer .prod .prodDesc, #itemListContainer .prod .prodPrice {
+#itemListContainer ul a .prod .prodDesc, #itemListContainer ul a .prod .prodPrice {
   padding: 0.5rem;
 }
-#itemListContainer .prod .prodDesc p, #itemListContainer .prod .prodPrice p {
+#itemListContainer ul a .prod .prodDesc p, #itemListContainer ul a .prod .prodPrice p {
   margin: 0;
   text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+  #itemListContainer ul {
+    justify-content: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
