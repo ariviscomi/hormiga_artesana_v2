@@ -38,41 +38,13 @@ html #root main section {
   border: 1px groove rgba(167, 67, 58, 0.5019607843);
   padding: 1rem 0.5rem;
 }
-
-.headerNav {
-  height: 6.4rem;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(167, 67, 58, 0.5019607843);
-  margin-bottom: 0.5rem;
+html #root main .active {
+  background-color: red;
+  text-decoration-line: none;
 }
-.headerNav ul {
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.headerNav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0 1rem;
-  margin: 0 1rem;
-}
-.headerNav ul li a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.headerNav ul li:hover {
-  border: 1px solid #293241;
+html #root main .inactive {
+  background-color: blueviolet;
+  text-decoration-line: none;
 }
 
 .header {
@@ -115,6 +87,42 @@ html #root main section {
 .header .cart .cartIcon {
   font-size: 3.2rem;
   cursor: pointer;
+}
+
+.headerNav {
+  height: 6.4rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(167, 67, 58, 0.5019607843);
+  margin-bottom: 0.5rem;
+}
+.headerNav ul {
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerNav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+.headerNav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.headerNav ul li:hover {
+  border: 1px solid #293241;
 }
 
 .footer {

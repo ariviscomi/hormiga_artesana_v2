@@ -40,6 +40,16 @@ html {
 				border: 1px groove nth($paletaOp, 3);
 				padding: 1rem 0.5rem;
 			}
+
+			.active{
+				background-color: red;
+				text-decoration-line: none;
+			}
+
+			.inactive{
+				background-color: blueviolet;
+				text-decoration-line: none;
+			}
 		}
 	}
 }

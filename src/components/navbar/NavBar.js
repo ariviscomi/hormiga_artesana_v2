@@ -20,31 +20,56 @@ const NavBar = () => {
 							labelId="select-label"
 							id="simple-select"
 							label="Categoria">
-							<MenuItem value={'all'}>
-								<NavLink to='/'>
+
+							<NavLink
+								className={({ isActive }) =>
+									isActive ? 'active' : 'inactive'}
+								to='/'>
+								
+								<MenuItem>
 									Todos los Mates
-								</NavLink>
-							</MenuItem>
-							<MenuItem value={'natural'}>
-								<NavLink to='/category/natural'>
+								</MenuItem>
+							</NavLink>
+
+							<NavLink
+								className={({ isActive }) =>
+									isActive ? 'active' : 'inactive'}
+								to='/category/natural'>
+								
+								<MenuItem>
 									Natural Wood
-								</NavLink>
-							</MenuItem>
-							<MenuItem value={'minimal'}>
-								<NavLink to='/category/minimal'>
+								</MenuItem>
+							</NavLink>
+
+							<NavLink
+								className={({ isActive }) =>
+									isActive ? 'active' : 'inactive'}
+								to='/category/minimal'>
+								
+								<MenuItem>
 									Minimalista
-								</NavLink>
-							</MenuItem>
-							<MenuItem value={'tematic'}>
-								<NavLink to='/category/tematic'>
+								</MenuItem>
+							</NavLink>
+
+							<NavLink
+								className={({ isActive }) =>
+									isActive ? 'active' : 'inactive'}
+								to='/category/tematic'>
+
+								<MenuItem>
 									Tematico
-								</NavLink>
-							</MenuItem>
-							<MenuItem value={'custom'}>
-								<NavLink to='/customer'>
+								</MenuItem>
+							</NavLink>
+
+							<NavLink
+								className={({ isActive }) =>
+									isActive ? 'active' : 'inactive'}
+								to='/customer'>
+									
+								<MenuItem>
 									Personalizar
-								</NavLink>
-							</MenuItem>
+								</MenuItem>
+							</NavLink>
 						</Select>
 					</FormControl>
 				</Box>
