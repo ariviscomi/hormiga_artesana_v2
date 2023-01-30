@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
@@ -20,11 +20,31 @@ const NavBar = () => {
 							labelId="select-label"
 							id="simple-select"
 							label="Categoria">
-							<MenuItem value={'all'}>Todos los Mates</MenuItem>
-							<MenuItem value={'natural'}>Natural Wood</MenuItem>
-							<MenuItem value={'minimal'}>Minimalista</MenuItem>
-							<MenuItem value={'tematico'}>Tematico</MenuItem>
-							<MenuItem value={'custom'}>Personalizar</MenuItem>
+							<MenuItem value={'all'}>
+								<NavLink to='/'>
+									Todos los Mates
+								</NavLink>
+							</MenuItem>
+							<MenuItem value={'natural'}>
+								<NavLink to='/category/natural'>
+									Natural Wood
+								</NavLink>
+							</MenuItem>
+							<MenuItem value={'minimal'}>
+								<NavLink to='/category/minimal'>
+									Minimalista
+								</NavLink>
+							</MenuItem>
+							<MenuItem value={'tematic'}>
+								<NavLink to='/category/tematic'>
+									Tematico
+								</NavLink>
+							</MenuItem>
+							<MenuItem value={'custom'}>
+								<NavLink to='/customer'>
+									Personalizar
+								</NavLink>
+							</MenuItem>
 						</Select>
 					</FormControl>
 				</Box>

@@ -6,6 +6,7 @@ import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import Footer from './components/footer/Footer';
 import NavBar from './components/navbar/NavBar';
+import Custom from './components/customize/Custom';
 
 function App() {
 
@@ -16,7 +17,9 @@ function App() {
 			<main>
 				<Routes>
 					<Route path='/' element={<ItemListContainer/>} />
+					<Route path='/category/:category' element={<ItemListContainer/>} />
 					<Route path='item/:id' element={<ItemDetailContainer/>} />
+					<Route path='customer/' element={<Custom/>} />
 				</Routes>
 			</main>
 			<Footer/>
