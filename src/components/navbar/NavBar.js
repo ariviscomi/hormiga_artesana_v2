@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
@@ -21,15 +21,12 @@ const NavBar = () => {
 							id="simple-select"
 							label="Categoria">
 
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? 'active' : 'inactive'}
-								to='/'>
+							<Link to='/'>
 								
 								<MenuItem>
 									Todos los Mates
 								</MenuItem>
-							</NavLink>
+							</Link>
 
 							<NavLink
 								className={({ isActive }) =>
