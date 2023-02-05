@@ -4,7 +4,9 @@ import { MdShoppingCart } from 'react-icons/md';
 const HeaderCart = () => {
   return (
 	<div id='headerCart' className='cart'>
-		<MdShoppingCart className='cartIcon'/>
+		<button className='cartIcon'>
+			<MdShoppingCart/>
+		</button>
 	</div>
   )
 }

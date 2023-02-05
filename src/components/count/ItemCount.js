@@ -1,24 +1,46 @@
 import React from 'react';
 import { Button, ButtonGroup } from '@mui/material';
-import { useState } from 'react';
 
-const ItemCount = () => {
+const ItemCount = ({count,stock, setCount}) => {
 
-	const [count, setCount] = useState(0);
-
+	const suma = () => (count+1 <= stock) ? setCount(count + 1) : false;
+	const resta = () => (count-1 >= 0) ? setCount(count - 1) : false;
+	
 	return (
 		<div className='countContainer'>
+
 			<ButtonGroup
 				className='countBtnGroup'
 				disableElevation
 				size='small'
 				variant="contained"
 				aria-label="Disabled elevation buttons">
-				<Button className='countBtn'>-</Button>
-				<span className='count'>{count}</span>
-				<Button className='countBtn'>+</Button>
+
+				<Button 
+					onClick={resta} 
+					className='countBtn'>
+						-
+				</Button>
+				
+				<input
+					type='text'
+					className='count'
+					placeholder={count}
+				/>
+				
+				<Button 
+					onClick={suma}
+					className='countBtn'>
+						+
+				</Button>
+
 			</ButtonGroup>
-			<Button className='sendCart' variant='contained'>Agregar al Carrito</Button>
+
+			<Button 
+				className='sendCart'
+				variant='contained'>
+					Agregar al Carrito
+			</Button>
 		</div>
 	)
 }

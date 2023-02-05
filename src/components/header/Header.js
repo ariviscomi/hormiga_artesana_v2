@@ -1,7 +1,8 @@
 import React from 'react';
-import HeaderMenu from "./HeaderMenu"
-import HeaderCart from "./HeaderCart"
 import { Link } from 'react-router-dom';
+
+import HeaderMenu from "../headMenu/HeaderMenu"
+import HeaderCart from "../cart/HeaderCart"
 
 export const Header = () => {
 	return (

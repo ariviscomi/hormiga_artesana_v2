@@ -1,7 +1,10 @@
 import React from 'react';
 import ItemCount from '../count/ItemCount';
+import { useState } from 'react';
 
 const ItemDetail = ({prod}) => {
+
+	const [count, setCount] = useState(0);
 
 	let urlImg = prod.img;
 
@@ -15,11 +18,10 @@ const ItemDetail = ({prod}) => {
 			</div>
 			<div className='prodDetailDesc'>
 				<p>{prod.desc}</p>
-			</div>
-			<div className='prodDetailDesc'>
+				<span>Stock: {prod.stock}</span>
 				<span>Precio: ${prod.price}</span>
 			</div>
-			<ItemCount/>
+			<ItemCount count={count} stock={prod.stock} setCount={setCount}/>
 		</div>
 	);
 }

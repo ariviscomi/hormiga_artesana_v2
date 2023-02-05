@@ -36,9 +36,23 @@
 		}
 
 		.prodDetailDesc{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 1rem;
+
 			p,span{
 				text-align: center;
 				font-size: 1.5rem;
+			}
+
+			p{
+				align-self: center;
+			}
+
+			span{
+				align-self: flex-start;
 			}
 		}
 	}

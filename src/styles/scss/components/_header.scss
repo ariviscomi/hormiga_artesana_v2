@@ -46,6 +46,9 @@
 
 		
 		.cartIcon{
+			background-color: transparent;
+			color: nth($paleta,1);
+			border: none;
 			font-size: 3.2rem;
 			cursor: pointer;	
 		}
