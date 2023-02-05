@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ItemDetail = ({prod}) => {
 
@@ -18,6 +18,7 @@ const ItemDetail = ({prod}) => {
 			<div className='prodDetailDesc'>
 				<span>Precio: ${prod.price}</span>
 			</div>
+			
 		</div>
 	);
 }

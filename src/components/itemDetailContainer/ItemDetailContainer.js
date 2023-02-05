@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { useParams,Link} from 'react-router-dom';
+import { MdArrowBackIosNew } from "react-icons/md";
+
 import ItemDetail from './ItemDetail';
-import { useParams } from 'react-router-dom';
+
 
 //* Lista de Productos
 const PRODS = [
@@ -23,7 +25,7 @@ const ItemDetailContainer = () => {
 	return (
 		<section id='itemDetailContainer'>
 			<Link to='/'>
-				<button>Volver</button>
+				<MdArrowBackIosNew className='icon'/>
 			</Link>
 			<ItemDetail prod={PRODS[id]} />
 		</section>

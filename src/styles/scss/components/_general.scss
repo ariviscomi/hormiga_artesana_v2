@@ -13,6 +13,8 @@ html {
 		display: none;
 	}
 
+	scroll-behavior: smooth;
+
 	body {
 		height: 100vh;
 		font-family: 'Roboto Flex', sans-serif;
@@ -41,15 +43,21 @@ html {
 				padding: 1rem 0.5rem;
 			}
 
-			.active{
-				background-color: red;
-				text-decoration-line: none;
-			}
+		}
+		
+		.active{
+			background-color: red;
+			text-decoration-line: none;
+		}
 
-			.inactive{
-				background-color: blueviolet;
-				text-decoration-line: none;
-			}
+		.inactive{
+			background-color: blueviolet;
+			text-decoration-line: none;
+		}
+
+		a{
+			text-decoration: none;
+			width: min-content;
 		}
 	}
 }

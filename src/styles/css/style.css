@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 html ::-webkit-scrollbar {
   display: none;
@@ -38,13 +39,17 @@ html #root main section {
   border: 1px groove rgba(167, 67, 58, 0.5019607843);
   padding: 1rem 0.5rem;
 }
-html #root main .active {
+html #root .active {
   background-color: red;
   text-decoration-line: none;
 }
-html #root main .inactive {
+html #root .inactive {
   background-color: blueviolet;
   text-decoration-line: none;
+}
+html #root a {
+  text-decoration: none;
+  width: min-content;
 }
 
 .header {
@@ -137,6 +142,13 @@ html #root main .inactive {
   justify-content: space-around;
   flex-direction: column;
 }
+#itemDetailContainer .icon {
+  font-size: 3.2rem;
+}
+#itemDetailContainer .icon:hover {
+  border: 1px solid #293241;
+  border-radius: 5px;
+}
 #itemDetailContainer .itemDetail {
   background-color: #ffffff;
   display: flex;
@@ -144,7 +156,9 @@ html #root main .inactive {
   flex-direction: column;
   border: 1px solid #a7433a;
   border-radius: 5px;
-  height: 80%;
+  padding: 0.5rem;
+  min-height: 80%;
+  height: min-content;
 }
 #itemDetailContainer .itemDetail h3 {
   text-align: center;
@@ -157,6 +171,10 @@ html #root main .inactive {
 #itemDetailContainer .itemDetail .prodDetailDesc p, #itemDetailContainer .itemDetail .prodDetailDesc span {
   text-align: center;
   font-size: 2.2rem;
+}
+#itemDetailContainer .itemDetail button {
+  width: 30%;
+  align-self: center;
 }
 
 #itemListContainer ul {
