@@ -39,6 +39,27 @@ html #root main section {
   border: 1px groove rgba(167, 67, 58, 0.5019607843);
   padding: 1rem 0.5rem;
 }
+html #root .countContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+html #root .countContainer .sendCart {
+  width: 30%;
+}
+html #root .countContainer .countBtn, html #root .countContainer .count {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+html #root .countContainer .count {
+  text-align: center;
+  text-justify: center;
+  border: 1px solid grey;
+}
 html #root .active {
   background-color: red;
   text-decoration-line: none;
@@ -170,11 +191,7 @@ html #root a {
 }
 #itemDetailContainer .itemDetail .prodDetailDesc p, #itemDetailContainer .itemDetail .prodDetailDesc span {
   text-align: center;
-  font-size: 2.2rem;
-}
-#itemDetailContainer .itemDetail button {
-  width: 30%;
-  align-self: center;
+  font-size: 1.5rem;
 }
 
 #itemListContainer ul {

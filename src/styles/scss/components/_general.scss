@@ -44,6 +44,31 @@ html {
 			}
 
 		}
+
+		.countContainer{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+
+			.sendCart{
+				width: 30%;
+			}
+
+			.countBtn, .count{
+				width: 3rem;
+				height: 3rem;
+				font-size: 1rem;
+			}
+
+			.count{
+				text-align: center;
+				text-justify: center;
+				border: 1px solid grey;
+			}
+		}
 		
 		.active{
 			background-color: red;
