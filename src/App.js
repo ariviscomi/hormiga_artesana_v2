@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
+import './styles/css/style.css';
 
 import Header from './components/header/Header';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
@@ -11,16 +12,17 @@ import Footer from './components/footer/Footer';
 import NavBar from './components/navbar/NavBar';
 import Custom from './components/customize/Custom';
 
-import { cartContext } from './context/cartContext';
+import CartProvider from './context/cartProvider';
 
 function App() {
 
-	const [carrito, setCarrito] = useState(0)
-
 	return (
-		<cartContext.Provider value={{carrito, setCarrito}}>
-			<BrowserRouter>
-				<Header/>
+		<BrowserRouter>
+
+			<Header />
+
+			<CartProvider>
+
 				<NavBar />
 				<main>
 					<Routes>
@@ -30,10 +32,13 @@ function App() {
 						<Route path='customer/' element={<Custom />} />
 					</Routes>
 				</main>
-				<Footer />
-			</BrowserRouter>
-		</cartContext.Provider>
+
+			</CartProvider>
+
+			<Footer />
+
+		</BrowserRouter>
 	);
-};
+}
 
 export default App;

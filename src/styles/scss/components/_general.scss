@@ -52,23 +52,26 @@ html {
 			justify-content: center;
 			align-items: center;
 			gap: 1rem;
-
-			.sendCart{
-				width: 30%;
-			}
-
+			
+			
 			.countBtn, .count{
 				width: 3rem;
 				height: 3rem;
 				font-size: 2rem;
 			}
-
+			
 			.count{
 				text-align: center;
 				text-justify: center;
 				border: 2px solid #1976d2;
 				
 			}
+		}
+
+		.sendCart{
+			align-self: center;
+			width: 30%;
+			margin: 1rem 0.5rem;
 		}
 		
 		.active{

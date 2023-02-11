@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ItemCount from '../count/ItemCount';
 import Item from "./Item";
 
 const ItemList = ({ PRODS }) => {
 
-	const [count, setCount] = useState(0);
 	return (
 
 		<ul>
@@ -16,7 +14,6 @@ const ItemList = ({ PRODS }) => {
 						<Link to={`item/${item.id}`} key={item.id}>
 							<Item prod={item} />
 						</Link>
-						<ItemCount count={count} stock={item.stock} setCount={setCount} />
 					</div>
 				)
 			})}

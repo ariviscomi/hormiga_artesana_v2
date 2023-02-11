@@ -5,15 +5,16 @@ import { cartContext } from '../../context/cartContext';
 
 const HeaderCart = () => {
 
-	const {carrito} = useContext(cartContext);
+	const { cart } = useContext(cartContext) ;
+
 	return (
 		<div id='headerCart' className='cart'>
 			<MdShoppingCart className='cartIcon'/>
 			<span className='cartIcon'>
-				{carrito}
+				0
 			</span>
 		</div>
-	)
-}
+	);
+};
 
-export default HeaderCart
+export default HeaderCart;

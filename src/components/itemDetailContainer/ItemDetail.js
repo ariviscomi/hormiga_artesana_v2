@@ -1,8 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { Button } from '@mui/material';
 
+import { cartContext } from '../../context/cartContext';
 import ItemCount from '../count/ItemCount';
 
 const ItemDetail = ({prod}) => {
+
+	const { addItem } = useContext(cartContext);
 
 	const [count, setCount] = useState(1);
 
@@ -22,6 +26,13 @@ const ItemDetail = ({prod}) => {
 				<span>Precio: ${prod.price}</span>
 			</div>
 			<ItemCount count={count} stock={prod.stock} setCount={setCount}/>
+			<Button 
+				className='sendCart'
+				variant='contained'
+				onClick={() => addItem(prod, count)}
+				>
+					Agregar al Carrito
+			</Button>
 		</div>
 	);
 }

@@ -47,9 +47,6 @@ html #root .countContainer {
   align-items: center;
   gap: 1rem;
 }
-html #root .countContainer .sendCart {
-  width: 30%;
-}
 html #root .countContainer .countBtn, html #root .countContainer .count {
   width: 3rem;
   height: 3rem;
@@ -59,6 +56,11 @@ html #root .countContainer .count {
   text-align: center;
   text-justify: center;
   border: 2px solid #1976d2;
+}
+html #root .sendCart {
+  align-self: center;
+  width: 30%;
+  margin: 1rem 0.5rem;
 }
 html #root .active {
   background-color: red;
