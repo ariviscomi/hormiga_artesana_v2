@@ -5,15 +5,13 @@ import { cartContext } from '../../context/cartContext';
 
 const HeaderCart = () => {
 
-	const cartCount = useContext(cartContext);
+	const {carrito} = useContext(cartContext);
 	return (
 		<div id='headerCart' className='cart'>
 			<MdShoppingCart className='cartIcon'/>
 			<span className='cartIcon'>
-				{cartCount}
+				{carrito}
 			</span>
-
-			
 		</div>
 	)
 }

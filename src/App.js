@@ -15,10 +15,10 @@ import { cartContext } from './context/cartContext';
 
 function App() {
 
-	const [carrito, setCarrito] = useState(10)
+	const [carrito, setCarrito] = useState(0)
 
 	return (
-		<cartContext.Provider value={carrito}>
+		<cartContext.Provider value={{carrito, setCarrito}}>
 			<BrowserRouter>
 				<Header/>
 				<NavBar />

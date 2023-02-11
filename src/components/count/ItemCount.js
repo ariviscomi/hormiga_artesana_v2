@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, ButtonGroup } from '@mui/material';
+
+import { cartContext } from '../../context/cartContext';
 
 const ItemCount = ({count,stock, setCount}) => {
 
 	const suma = () => (count+1 <= stock) ? setCount(count + 1) : false;
 	const resta = () => (count-1 >= 0) ? setCount(count - 1) : false;
+
+	const {carrito, setCarrito} = useContext(cartContext);
 	
 	return (
 		<div className='countContainer'>
@@ -38,7 +42,8 @@ const ItemCount = ({count,stock, setCount}) => {
 
 			<Button 
 				className='sendCart'
-				variant='contained'>
+				variant='contained'
+				onClick={()=> setCarrito(carrito + 1) }>
 					Agregar al Carrito
 			</Button>
 		</div>

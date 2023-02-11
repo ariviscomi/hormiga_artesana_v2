@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
+
 const Item = ({ prod }) => {
+
 	return (
-		<div id={prod.id} className='prod animate__animated animate__backInLeft'>
+		<div>
 			<div>
 				<h3>{prod.title}</h3>
 			</div>

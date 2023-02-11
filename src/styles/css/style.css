@@ -114,7 +114,7 @@ html #root a {
   background-color: transparent;
   color: #ffffff;
   border: none;
-  font-size: 3.2rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 
@@ -219,22 +219,22 @@ html #root a {
 #itemListContainer ul a {
   width: min-content;
 }
-#itemListContainer ul a .prod {
-  padding: 0 0.2rem;
+#itemListContainer ul .prod {
+  padding: 0.5rem 0.1rem;
   margin: 0.5rem;
   width: min-content;
-  background-color: #ffffff;
   max-height: min-content;
+  background-color: #ffffff;
   border: 1px solid #a7433a;
   border-radius: 5px;
 }
-#itemListContainer ul a .prod h3 {
+#itemListContainer ul .prod h3 {
   text-align: center;
 }
-#itemListContainer ul a .prod .prodDesc, #itemListContainer ul a .prod .prodPrice {
+#itemListContainer ul .prod .prodDesc, #itemListContainer ul .prod .prodPrice {
   padding: 0.5rem;
 }
-#itemListContainer ul a .prod .prodDesc p, #itemListContainer ul a .prod .prodPrice p {
+#itemListContainer ul .prod .prodDesc p, #itemListContainer ul .prod .prodPrice p {
   margin: 0;
   text-align: left;
 }

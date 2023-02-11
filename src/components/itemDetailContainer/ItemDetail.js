@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 import ItemCount from '../count/ItemCount';
-import { useState } from 'react';
 
 const ItemDetail = ({prod}) => {
 
-	const [count, setCount] = useState(0);
+	const [count, setCount] = useState(1);
 
 	let urlImg = prod.img;
 
