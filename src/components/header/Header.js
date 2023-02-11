@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HeaderMenu from "../headMenu/HeaderMenu"
-import HeaderCart from "../cart/HeaderCart"
+import HeaderMenu from "../headMenu/HeaderMenu";
+import HeaderCart from "../cart/HeaderCart";
 
-export const Header = () => {
+const Header = () => {
 	return (
 		<header id='header' className='header'>
 			<HeaderMenu />
@@ -16,4 +16,6 @@ export const Header = () => {
 			<HeaderCart />
 		</header>
 	)
-}
+};
+
+export default Header;
