@@ -10,8 +10,8 @@ const ItemList = ({ PRODS }) => {
 		<ul>
 			{PRODS.map((item) => {
 				return (
-					<div id={item.id} className='prod animate__animated animate__backInLeft'>
-						<Link to={`item/${item.id}`} key={item.id}>
+					<div key={item.id} id={item.id} className='prod animate__animated animate__backInLeft'>
+						<Link to={`item/${item.id}`}>
 							<Item prod={item} />
 						</Link>
 					</div>

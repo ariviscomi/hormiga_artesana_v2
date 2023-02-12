@@ -18,11 +18,18 @@ const CartProvider = ({ children }) => {
 		};
 
 		setCart([...cart, newProduct]);
+		console.log(cart);
 	};
+
+	const clear = () => {
+		setCart([]);
+		console.log('void');
+	};
+
 
 	return (
 		<cartContext.Provider
-			value={{cart, addItem}}
+			value={{cart, addItem, clear}}
 		>
 			{children}
 		</cartContext.Provider>
