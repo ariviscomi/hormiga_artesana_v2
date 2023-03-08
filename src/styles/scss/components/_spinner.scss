@@ -1,0 +1,19 @@
+.spinnerContainer{
+	width: 100%;
+	height: 100vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: nth($paletaOp,1);
+
+	.spinner{
+		width: 6.4rem;
+		height:6.4rem;
+
+		font-size:2rem;
+
+		color: nth($paleta,3);
+	}
+}
